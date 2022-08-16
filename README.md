@@ -8,9 +8,9 @@
 - Testes devem ser criados para verificar essas especificações
 - Leilões com mais de uma semana devem ser finalizados 
 
-### Criar um mock da classe
+### Criar um mock/dublê da classe
 
-Cria uma classe 'Falsa' que fará o papel da classe LeilaoDao. 
+Cria uma classe 'Falsa' que representará a classe LeilaoDao. 
 ```
 $leilaoDao = $this->createMock(LeilaoDao::class);
 ```
