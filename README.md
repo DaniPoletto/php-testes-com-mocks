@@ -21,3 +21,28 @@ O método recuperarNaoFinalizados irá retornar um array:
         $leilaoDao->method('recuperarNaoFinalizado')
             ->willReturn([$fiat, $variant]);
 ```
+
+### Verificar se o método foi executado x vezes
+```
+        $leilaoDao->expects($this->exactly(2))
+            ->method('atualiza');
+```
+
+### Verificar se o método foi chamado x vezes com certos parâmetros
+```
+        $leilaoDao->expects($this->exactly(2))
+            ->method('atualiza')
+            ->withConsecutive(
+                [$fiat],
+                [$variant]
+            );
+```
+
+### Verificar se o método é chamado com parâmetros especificos
+```
+        $leilaoDao->expects($this->once())
+            ->method('atualiza')
+            ->with($fiat);
+ ```
+ 
+ 
