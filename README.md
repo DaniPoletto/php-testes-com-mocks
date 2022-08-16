@@ -22,13 +22,13 @@ O método recuperarNaoFinalizados irá retornar um array:
             ->willReturn([$fiat, $variant]);
 ```
 
-### Verificar se o método foi executado x vezes
+### Verificar se o método foi chamado x vezes
 ```
         $leilaoDao->expects($this->exactly(2))
             ->method('atualiza');
 ```
 
-### Verificar se o método foi chamado x vezes com certos parâmetros
+### Verificar se o método foi chamado x vezes com certos parâmetros em cada vez
 ```
         $leilaoDao->expects($this->exactly(2))
             ->method('atualiza')
@@ -44,5 +44,13 @@ O método recuperarNaoFinalizados irá retornar um array:
             ->method('atualiza')
             ->with($fiat);
  ```
+ 
+ ### Personalizando o Mock
+ 
+ Definindo argumentos pro construtor, por exemplo: 
+ ```
+ $leilaoDao = $this->getMockBuilder(LeilaoDao::class)->setConstructorArgs([new \PDO('sqlite::memory:')]);;
+ ```
+ 
  
  
