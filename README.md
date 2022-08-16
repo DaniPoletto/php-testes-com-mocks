@@ -14,3 +14,10 @@ Cria uma classe 'Falsa' que representará a classe LeilaoDao.
 ```
 $leilaoDao = $this->createMock(LeilaoDao::class);
 ```
+
+### Configurar métodos
+O método recuperarNaoFinalizados irá retornar um array:
+```
+        $leilaoDao->method('recuperarNaoFinalizado')
+            ->willReturn([$fiat, $variant]);
+```
