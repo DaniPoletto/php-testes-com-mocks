@@ -8,6 +8,16 @@
 - Testes devem ser criados para verificar essas especificações
 - Leilões com mais de uma semana devem ser finalizados 
 
+### Diferença entre os dublês de teste
+
+|Tipo|Descrição|
+|---|---|
+|Mock|Tem como objetivo verificar o comportamento. São objetos pré-programados com expectativas das mensagens (métodos e seus parâmetors) que vão receber.|
+|Dummy|Nunca são utilizados. Geralmente servem pra peencher requisitos dps parâmetros de algum método.|
+|Fakes|Realmente funcionam, mas normalmente tomam algum tipo de atalho. Ex: Banco em memória|
+|Stubs|Fornecem respostas pré-definidas ás chamadas dos métodos pré-definidos durante o teste. Normalmente não respondem ao que não foram explicidamente programados para responder.|
+|Spies|Stubs que também gravam algum tipo de informação. Ex: Guardar quantidade de mensagens enviadas em um serviço de e-mail. |
+
 ### Criar um mock/dublê da classe
 
 Cria uma classe 'Falsa' que representará a classe LeilaoDao. 
