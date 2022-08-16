@@ -49,7 +49,9 @@ O método recuperarNaoFinalizados irá retornar um array:
  
  Definindo argumentos pro construtor, por exemplo: 
  ```
- $leilaoDao = $this->getMockBuilder(LeilaoDao::class)->setConstructorArgs([new \PDO('sqlite::memory:')]);;
+ $leilaoDao = $this->getMockBuilder(LeilaoDao::class)
+        ->setConstructorArgs([new \PDO('sqlite::memory:')])
+        ->getMock;
  ```
  
  
