@@ -7,3 +7,10 @@
 - Um usuário só pode dar no máximo 5 lances
 - Testes devem ser criados para verificar essas especificações
 - Leilões com mais de uma semana devem ser finalizados 
+
+### Criar um mock da classe
+
+Cria uma classe 'Falsa' que fará o papel da classe LeilaoDao. 
+```
+$leilaoDao = $this->createMock(LeilaoDao::class);
+```
