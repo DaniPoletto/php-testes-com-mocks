@@ -64,5 +64,16 @@ O método recuperarNaoFinalizados irá retornar um array:
         ->getMock;
  ```
  
+ ### Testando parâmetros de um método
+ ```
+ $this->enviadorEmail->expects($this->exactly(2))
+            ->method('notificarTerminoLeilao')
+            ->willReturnCallBack(function (Leilao $leilao) {
+                static::assertTrue($leilao->estaFinalizado());
+            });
+ ```
+ 
+ 
+ 
  
  
