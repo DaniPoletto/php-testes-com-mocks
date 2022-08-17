@@ -73,7 +73,10 @@ O método recuperarNaoFinalizados irá retornar um array:
             });
  ```
  
- 
+ ### Importante
+ - Evitar métodos estáticos porque não é possível criar dublês de testes com eles
+ - Em caso de necessidade de métodos estáticos, pegar o retornar dele e receber por injeção de dependência
+ - Utilizar injeção de dependência
  
  
  
