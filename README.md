@@ -1,12 +1,12 @@
 # Testes com Mocks utilizando [PHP Unit 9](https://phpunit.de)
 
 ### Especificações do Projeto
-- Os usuários podem dar lances em um leilão
-- Um leiloeiro avalia o leilão informando qual o maior valor de lance, qual o menor valor e os 3 maiores lances
-- Um usuário não pode dar dois lances consecutivos
-- Um usuário só pode dar no máximo 5 lances
-- Testes devem ser criados para verificar essas especificações
-- Leilões com mais de uma semana devem ser finalizados 
+- [x] Os usuários podem dar lances em um leilão
+- [x] Um leiloeiro avalia o leilão informando qual o maior valor de lance, qual o menor valor e os 3 maiores lances
+- [x] Um usuário não pode dar dois lances consecutivos
+- [x] Um usuário só pode dar no máximo 5 lances
+- [x] Testes devem ser criados para verificar essas especificações
+- [x] Leilões com mais de uma semana devem ser finalizados 
 
 ### Diferença entre os dublês de teste
 
@@ -74,9 +74,9 @@ O método recuperarNaoFinalizados irá retornar um array:
  ```
  
  ### Importante
- - Evitar métodos estáticos porque não é possível criar dublês de testes com eles
- - Em caso de necessidade de métodos estáticos, pegar o retornar dele e receber por injeção de dependência
- - Utilizar injeção de dependência
+ - [x] Evitar métodos estáticos porque não é possível criar dublês de testes com eles
+ - [x] Em caso de necessidade de métodos estáticos, pegar o retornar dele e receber por injeção de dependência
+ - [x] Utilizar injeção de dependência
  
  
  
